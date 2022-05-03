@@ -2,8 +2,8 @@
 import { NavLink } from "react-router-dom";
 
 // TypeScript Assets
-import { headerNav, NavMenu } from "../../assets/js/navigation";
-import { addCSSClassName } from "../../assets/js/functions";
+import { headerNav, NavMenu } from "../../assets/scripts/navigation";
+import { addCSSClassName } from "../../assets/scripts/functions";
 
 // Icons
 import cartIcon from "../../assets/icons/cart.svg";

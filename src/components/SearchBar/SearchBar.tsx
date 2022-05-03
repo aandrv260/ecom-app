@@ -1,6 +1,6 @@
 import css from "./SearchBar.module.scss";
 
-import { addCSSClassName } from "../../assets/js/functions";
+import { addCSSClassName } from "../../assets/scripts/functions";
 import React, { useState } from "react";
 
 import searchIcon from "../../assets/icons/search.svg";

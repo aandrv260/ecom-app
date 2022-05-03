@@ -1,4 +1,4 @@
-import { addCSSClassName } from "../../../assets/js/functions";
+import { addCSSClassName } from "../../../assets/scripts/functions";
 
 import css from "./Container.module.scss";
 
