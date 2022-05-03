@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.7rem 6.4rem;
+  background-color: var(--color-main-light-5);
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      color: #444;
+    }
+
+    &:hover,
+    &:active {
+      color: #333;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}

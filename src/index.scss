@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main: #e67e47;
+
+  --color-main-dark-1: #170d07;
+  --color-main-dark-2: #452615;
+  --color-main-dark-3: #5c321c;
+  --color-main-dark-4: #733f24;
+  --color-main-dark-5: #a15832;
+
+  --color-main-light-1: #fdf2ed;
+  --color-main-light-2: #fae5da;
+  --color-main-light-3: #f8d8c8;
+  --color-main-light-4: #f3bfa3;
+  --color-main-light-5: #eea57e;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.6;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.3;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2.4rem;
+}

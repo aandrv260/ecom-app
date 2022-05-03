@@ -1,0 +1,18 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 auto;
+  flex-basis: 40%;
+}
+
+.search-bar {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  width: 100%;
+
+  &__icon {
+    height: 2.4rem;
+    width: auto;
+  }
+}
