@@ -6,6 +6,7 @@ const products: ProductType[] = [
   {
     title: 'Headphones producing high quality music',
     id: generateId(),
+    quantity: 1,
     description: 'Listen music during exercise or walk in nature',
     category: 'Headphones',
     price: 39.99,
@@ -19,6 +20,7 @@ const products: ProductType[] = [
   {
     title: 'Headsets for good music',
     id: generateId(),
+    quantity: 1,
     description: 'Listen music during exercise or walk in nature',
     category: 'Headphones',
     price: 39.99,
@@ -32,6 +34,7 @@ const products: ProductType[] = [
   {
     title: 'Golf stick',
     id: generateId(),
+    quantity: 1,
     description: 'Listen music during exercise or walk in nature',
     category: 'Headphones',
     price: 39.99,
@@ -45,6 +48,7 @@ const products: ProductType[] = [
   {
     title: 'Soccer ball for proffesionals',
     id: generateId(),
+    quantity: 1,
     description: 'Listen music during exercise or walk in nature',
     category: 'Headphones',
     price: 39.99,

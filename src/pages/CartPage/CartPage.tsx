@@ -1,9 +1,8 @@
-// import { addCSSClassName } from '../../assets/scripts/functions';
 import { useSelector } from 'react-redux';
 import CartItem from '../../components/CartItem/CartItem';
 import Container from '../../components/Helpers/Container/Container';
+import SectionHeading from '../../components/SectionHeading/SectionHeading';
 import { Store } from '../../models/store';
-// import css from './CartPage.module.scss';
 
 const CartPage = () => {
   const cartItems = useSelector((state: Store) => state.cart.products);
@@ -14,7 +13,15 @@ const CartPage = () => {
     ));
   };
 
-  return <Container>{renderCartItems()}</Container>;
+  return (
+    <Container>
+      <SectionHeading
+        className="u-center-text u-margin-bottom-big"
+        heading="Your Cart"
+      />
+      {renderCartItems()}
+    </Container>
+  );
 };
 
 export default CartPage;

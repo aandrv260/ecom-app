@@ -7,12 +7,9 @@ export interface ProductType {
   title: string;
   id: string;
   description: string;
+  quantity: number;
   category: string;
   price: number;
   comparePrice?: number;
   image: Image;
-}
-
-export interface CartProduct extends ProductType {
-  quantity: number;
 }

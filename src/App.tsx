@@ -8,6 +8,10 @@ import RouteType from './models/routes';
 import CartPage from './pages/CartPage/CartPage';
 import ProductPage from './pages/ProductPage/ProductPage';
 
+// Styles
+import './assets/styles/typography.scss';
+import './assets/styles/utils.scss';
+
 // Pages (lazy-loading)
 const CategoriesPage = React.lazy(
   () => import('./pages/CategoriesPage/CategoriesPage')
