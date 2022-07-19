@@ -17,21 +17,44 @@ const cartSlice = createSlice({
       const foundItem = products.find(item => item.id === id);
 
       if (foundItem) {
-        state.products.push(foundItem);
+        console.log(state.products.includes(foundItem));
+        const itemInCart = state.products.find(
+          item => item.id === foundItem.id
+        )!;
+
+        if (itemInCart) {
+          const indexOfItemInCart = state.products.indexOf(itemInCart);
+          state.products[indexOfItemInCart].quantity++;
+        } else {
+          state.products.push(foundItem);
+        }
         state.itemsNumber = state.products.length;
       }
     },
+
     removeFromCart(state, action) {
       const { payload: id } = action;
       const cartProducts = state.products;
 
-      const item = cartProducts.find(item => item.id === id);
+      const itemToRemove = cartProducts.find(product => product.id === id);
 
-      if (item) {
-        const indexOfItem = cartProducts.indexOf(item);
+      if (itemToRemove) {
+        const indexOfItem = cartProducts.indexOf(itemToRemove);
         console.log('itemIn_Cart', indexOfItem);
         state.products.splice(indexOfItem, 1);
         state.itemsNumber = state.products.length;
+      }
+    },
+
+    updateQuantity(state, action) {
+      const { id, updateType } = action.payload;
+      const itemToUpdate = state.products.find(item => item.id === id);
+
+      if (itemToUpdate) {
+        const indexOfItemToUpdate = state.products.indexOf(itemToUpdate);
+        updateType === 'increase'
+          ? state.products[indexOfItemToUpdate].quantity++
+          : state.products[indexOfItemToUpdate].quantity--;
       }
     },
   },

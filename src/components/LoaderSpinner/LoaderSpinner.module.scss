@@ -1,0 +1,31 @@
+.spinner {
+  //   border: 5px solid #e76e22;
+  border: 8px solid #eee; /* Light grey */
+  border-top: 8px solid #e76e22;
+  border-bottom: 8px solid #e76e22;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 5rem;
+  width: 5rem;
+  margin: 2.4rem auto 0;
+
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

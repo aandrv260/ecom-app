@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addCSSClassName } from '../../assets/scripts/functions';
 
 import { ProductType } from '../../models/product';
+import { Store } from '../../models/store';
 import { cartActions } from '../../store/cart-slice';
 
 import css from './CartItem.module.scss';
@@ -13,6 +13,7 @@ type Props = {
 
 const CartItem: React.FC<Props> = props => {
   const dispatch = useDispatch();
+  const allCartProducts = useSelector((state: Store) => state.cart.products);
 
   const {
     title,
@@ -22,20 +23,22 @@ const CartItem: React.FC<Props> = props => {
     comparePrice,
     image,
   } = props.product;
-  const [curQuantity, setCurQuantity] = useState<number>(quantity);
 
-  const price = prodPrice * curQuantity;
+  const curCartItem = allCartProducts.find(item => item.id === id);
+  const price = (prodPrice * quantity).toFixed(2);
 
   const increaseQtyHandler = () => {
-    setCurQuantity(curQty => curQty + 1);
+    if (curCartItem) {
+      dispatch(cartActions.updateQuantity({ updateType: 'increase', id }));
+    }
   };
 
   const decreaseQtyHandler = () => {
-    if (curQuantity - 1 <= 0) {
+    if (quantity - 1 === 0) {
       dispatch(cartActions.removeFromCart(id));
     }
 
-    setCurQuantity(curQty => curQty - 1);
+    dispatch(cartActions.updateQuantity({ updateType: 'decrease', id }));
   };
 
   return (
@@ -55,7 +58,7 @@ const CartItem: React.FC<Props> = props => {
         </div>
 
         <span className={addCSSClassName(css, 'cart-item__qty')}>
-          {curQuantity}
+          {quantity}
         </span>
 
         <div
@@ -72,7 +75,7 @@ const CartItem: React.FC<Props> = props => {
 
         {comparePrice && (
           <span className={addCSSClassName(css, 'cart-item__comp-price')}>
-            &#36;{comparePrice}
+            &#36;{comparePrice.toFixed(2)}
           </span>
         )}
       </div>

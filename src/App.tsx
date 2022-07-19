@@ -11,6 +11,7 @@ import ProductPage from './pages/ProductPage/ProductPage';
 // Styles
 import './assets/styles/typography.scss';
 import './assets/styles/utils.scss';
+import LoaderSpinner from './components/LoaderSpinner/LoaderSpinner';
 
 // Pages (lazy-loading)
 const CategoriesPage = React.lazy(
@@ -65,7 +66,7 @@ const App = () => {
     <Fragment>
       <Header />
       <main id="main-content">
-        <Suspense fallback={<p>Loading...</p>}>
+        <Suspense fallback={<LoaderSpinner />}>
           <Routes>{generateRoutes(routes)}</Routes>
         </Suspense>
       </main>

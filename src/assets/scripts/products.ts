@@ -4,7 +4,7 @@ import { generateId } from './functions';
 
 const products: ProductType[] = [
   {
-    title: 'Headphones producing high quality music',
+    title: 'High Quality Headphones',
     id: generateId(),
     quantity: 1,
     description: 'Listen music during exercise or walk in nature',
@@ -45,6 +45,168 @@ const products: ProductType[] = [
     },
   },
 
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
+
+  {
+    title: 'Soccer ball for proffesionals',
+    id: generateId(),
+    quantity: 1,
+    description: 'Listen music during exercise or walk in nature',
+    category: 'Headphones',
+    price: 39.99,
+    comparePrice: 59.99,
+    image: {
+      src: productImg1,
+      alt: '',
+    },
+  },
   {
     title: 'Soccer ball for proffesionals',
     id: generateId(),
